@@ -1,0 +1,7 @@
+board:
+  name: controllo
+  vendor: jsw
+  socs:
+    - name: nrf52840
+      variants:
+        - name: zmk

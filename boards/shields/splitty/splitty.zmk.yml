@@ -1,0 +1,11 @@
+file_format: "1"
+id: splitty
+name: Splitty
+type: shield
+url: https://github.com/jswill/zmk-config/
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - splitty_left
+  - splitty_right
