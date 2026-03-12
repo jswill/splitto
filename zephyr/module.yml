@@ -1,4 +1,3 @@
-name: zmk-keyboards-jw
 build:
   settings:
     board_root: .

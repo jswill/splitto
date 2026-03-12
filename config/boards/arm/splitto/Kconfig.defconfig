@@ -1,0 +1,45 @@
+#
+# Copyright (c) 2023 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+#
+
+if BOARD_SPLITTO_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Splitto Keyb"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if BOARD_SPLITTO_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Splitto Keyb (R)"
+
+endif
+
+
+if BOARD_SPLITTO_LEFT || BOARD_SPLITTO_RIGHT
+
+config BOARD
+    default "splitto"
+
+config ZMK_SPLIT
+    default y
+
+config BT_CTLR
+    default BT
+
+if USB
+
+config USB_NRFX
+    default y
+
+config USB_DEVICE_STACK
+    default y
+
+endif # USB
+
+endif # BOARD_SPLITTO_LEFT || BOARD_SPLITTO_RIGHT

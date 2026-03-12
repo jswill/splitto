@@ -1,0 +1,14 @@
+file_format: '1'
+id: splitto
+name: splitto
+type: board
+url: https://github.com/jswill/zmk-config
+arch: arm
+features:
+  - keys
+outputs:
+  - usb
+  - ble
+siblings:
+  - splitto_left
+  - splitto_right
