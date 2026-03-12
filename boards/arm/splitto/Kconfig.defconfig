@@ -1,10 +1,6 @@
-#
-# Copyright (c) 2023 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-#
+if SHIELD_SPLITTY_LEFT
 
-if BOARD_SPLITTO_LEFT
-
+# Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
     default "Splitto Keyb"
 
@@ -13,15 +9,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if BOARD_SPLITTO_RIGHT
-
-config ZMK_KEYBOARD_NAME
-    default "Splitto Keyb (R)"
-
-endif
-
-
-if BOARD_SPLITTO_LEFT || BOARD_SPLITTO_RIGHT
+if SHIELD_SPLITTY_LEFT || SHIELD_SPLITTY_RIGHT
 
 config BOARD
     default "splitto"
@@ -42,4 +30,4 @@ config USB_DEVICE_STACK
 
 endif # USB
 
-endif # BOARD_SPLITTO_LEFT || BOARD_SPLITTO_RIGHT
+endif
