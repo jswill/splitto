@@ -5,13 +5,9 @@ arch: arm
 toolchain:
   - zephyr
   - gnuarmemb
-  - xtools
 supported:
+  - adc
   - gpio
-  - counter
   - usb_device
-  - pwm
-  - nvs
-  - can
   - kscan
   - ble

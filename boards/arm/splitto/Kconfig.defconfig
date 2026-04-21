@@ -30,14 +30,4 @@ config USB_DEVICE_STACK
 
 endif # USB
 
-if ZMK_BACKLIGHT
-
-config PWM
-    default y
-
-config LED_PWM
-    default y
-
-endif # ZMK_BACKLIGHT
-
 endif # LEFT or RIGHT
