@@ -30,13 +30,4 @@ config USB_DEVICE_STACK
 
 endif # USB
 
-# External 32 kHz crystal oscillator
-choice CLOCK_CONTROL_NRF_K32SRC
-    default CLOCK_CONTROL_NRF_K32SRC_XTAL
-endchoice
-
-choice CLOCK_CONTROL_NRF_K32SRC_ACCURACY
-    default CLOCK_CONTROL_NRF_K32SRC_150PPM
-endchoice
-
 endif # LEFT or RIGHT
