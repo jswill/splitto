@@ -1,3 +1,5 @@
 include:
   - board: splitto_left
   - board: splitto_right
+  - board: splitto_left
+    shield: settings_reset
