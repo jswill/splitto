@@ -35,7 +35,7 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "tap-preferred";
-      tapping-term-ms = <250>;
+      tapping-term-ms = <150>;
       // quick-tap-ms = <175>;
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <6 7 8 9 10 11  18 19 20 21 22 23  30 31 32 33 34 35  42 43 44 45 46 47  48 49 50 51 52 53>;
@@ -45,7 +45,7 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "tap-preferred";
-      tapping-term-ms = <250>;
+      tapping-term-ms = <150>;
       // quick-tap-ms = <175>;
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <0 1 2 3 4 5  12 13 14 15 16 17  24 25 26 27 28 29  36 37 38 39 40 41  48 49 50 51 52 53>;
@@ -77,12 +77,12 @@
     default_layer {
       display-name = "Base Layer";
       bindings = <
-        &mo SET     &kp N1       &kp N2      &kp N3      &kp N4       &kp N5      &kp N6      &kp N7       &kp N8      &kp N9      &kp N0          &mo SET
+        &lt SET ESC &kp N1       &kp N2      &kp N3      &kp N4       &kp N5      &kp N6      &kp N7       &kp N8      &kp N9      &kp N0          &mo SET
         &kp TAB     &kp Q        &kp W       &kp E       &kp R        &kp T       &kp Y       &kp U        &kp I       &kp O       &kp P           &none
         &kp ESC     &mtl LCTRL A &mtl LALT S &mtl LWIN D &mtl LSHFT F &kp G       &kp H       &mtr RSHFT J &mtr RWIN K &mtr RALT L &mtr RCTRL SEMI &none
         &caps_word  &kp Z        &kp X       &kp C       &kp V        &kp B       &kp N       &kp M        &kp COMMA   &kp DOT     &kp FSLH        &none
 
-        &kp RET     &sl SYM      &kp SPACE                                        &kp BSPC    &mo NAV      &kp DEL
+        &lt SYM BSPC    &kp RET  &kp SPACE                                        &kp SPACE   &kp BSPC     &lt NAV DEL
       >;
     };
 
@@ -96,10 +96,10 @@
     // │      │ !   │ @   │ #   │ $   │ %   │      │ +   │ [   │ ]   │     │     │      │
     // │      │     │     │     │     │     │      │     │     │     │     │     │      │
     // ├──────┼─────┼─────┼─────┼─────┼─────┤      ├─────┼─────┼─────┼─────┼─────┼──────┤
-    // │  /?  │ \   │ |   │ ~   │ "   │ '   │      │     │ (   │ )   │     │     │      │
+    // │  /?  │ \   │ |   │ ~   │ "   │ '   │      │ =   │ (   │ )   │     │     │      │
     // │      │     │     │     │     │     │      │     │     │     │     │     │      │
     // ├──────┼─────┼─────┼─────┼─────┼─────┤      ├─────┼─────┼─────┼─────┼─────┼──────┤
-    // │      │ ^   │ &   │ *   │ v   │ B   │      │     │ {   │ }   │     │     │      │
+    // │      │ ^   │ &   │ *   │ v   │ B   │      │ -   │ {   │ }   │     │     │      │
     // │      │     │     │     │     │     │      │     │     │     │     │     │      │
     // └──────┴─────┴─────┴─────┴─────┴─────┘      └─────┴─────┴─────┴─────┴─────┴──────┘
     //          ┌───────┐ ┌───────┐ ┌───────┐      ┌───────┐ ┌───────┐ ┌───────┐
@@ -113,7 +113,7 @@
         &kp FSLH &kp BSLH  &kp PIPE &kp TILDE &kp DQT   &kp SQT       &kp EQUAL &kp LPAR &kp RPAR &trans &kp SEMI &trans
         &trans   &kp CARET &kp AMPS &kp STAR  &kp MINUS &kp PLUS      &kp MINUS &kp LBKT &kp RBKT &trans &trans   &trans
 
-        &trans &trans &trans                                         &trans &trans &trans
+        &trans &trans &trans                                         &trans &trans &transs
       >;
     };
 
@@ -126,7 +126,7 @@
         &none  &kp F12   &kp F2    &kp F3    &kp F4    &kp F5         &kp F6   &kp F7    &kp F8    &kp F9    &kp F10    &kp F11
         &none  &none     &none     &none     &none     &none          &none    &kp END   &kp HOME  &none     &none      &none
         &none  &none     &none     &none     &none     &none          &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none      &none
-        &none  &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(LS(V))  &none    &kp LSHFT &kp LWIN  &kp LALT  &kp LCTRL  &kp PSCRN
+        &none  &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(LS(V))  &none    &sk LSHFT &sk LWIN  &sk LALT  &sk LCTRL  &kp PSCRN
 
         &none  &none  &none                                           &none  &none  &none
       >;
