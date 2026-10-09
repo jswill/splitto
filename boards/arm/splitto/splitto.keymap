@@ -113,7 +113,7 @@
         &kp FSLH &kp BSLH  &kp PIPE &kp TILDE &kp DQT   &kp SQT       &kp EQUAL &kp LPAR &kp RPAR &trans &kp SEMI &trans
         &trans   &kp CARET &kp AMPS &kp STAR  &kp MINUS &kp PLUS      &kp MINUS &kp LBKT &kp RBKT &trans &trans   &trans
 
-        &trans &trans &trans                                         &trans &trans &transs
+        &trans &trans &trans                                         &trans &trans &trans
       >;
     };
 
@@ -128,7 +128,7 @@
         &none  &none     &none     &none     &none     &none          &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none      &none
         &none  &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(LS(V))  &none    &sk LSHFT &sk LWIN  &sk LALT  &sk LCTRL  &kp PSCRN
 
-        &none  &none  &none                                           &none  &none  &none
+        &trans &trans   &trans                                        &trans   &trans    &trans
       >;
     };
 
